@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Darlene Kalu</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course home page for Darlene Kalu, featuring an About Me profile and a curated list of web development resources.">
+    <meta name="author" content="Darlene Kalu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-   <h1>WDD 131</h1> 
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/darlenekalu/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/eph/6?lang=eng&id=p18#p18" target="_blank" rel="noopener">Scripture</a></li>
+                <li><a href="https://github.com/kaluScripts/wdd131" target="_blank" rel="noopener">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Darlene Kalu</h1>
+
+        <div class="card-grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="images/profile.jpg" alt="Darlene Kalu, a young woman with short natural hair and round glasses, smiling warmly in a black floral top" width="160" height="160" class="profile-photo">
+                    <p>
+                        My name is Darlene Kalu, and I was born on 7 November 1991 in the city of
+                        Abuja, Nigeria. I have a strong interest in music and reading. Listening to
+                        cool, rhythmic music helps to calm my mind and improve my focus. I also enjoy
+                        reading science fiction and crime thrillers, as they provide both relaxation
+                        and mental stimulation while expanding my imagination and critical thinking
+                        skills. From this course, I expect to greatly expand my intellectual horizon.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul class="resource-list">
+                    <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                    <li><a href="https://web.dev/learn" target="_blank" rel="noopener">Web.Dev</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Darlene Kalu &middot; Abuja, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
