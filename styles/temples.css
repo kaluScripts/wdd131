@@ -1,0 +1,187 @@
+/* ============================
+   WDD 131 – temples.css
+   Mobile-first base styles
+   Darlene Kalu
+   ============================ */
+
+:root {
+  --color-header: #1B2A4A;
+  --color-header-text: #FAF9F6;
+  --color-accent: #C9A227;
+  --color-bg: #FAF9F6;
+  --color-card-bg: #FFFFFF;
+  --color-card-border: #E4E4E4;
+  --color-text: #2B2B2B;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background-color: var(--color-header);
+  color: var(--color-header-text);
+  padding: 1.1rem 1rem;
+}
+
+#site-title {
+  display: block;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- Navigation (mobile: hamburger controlled) ---------- */
+
+nav {
+  position: relative;
+}
+
+#hamburger-btn {
+  display: block;
+  margin: 0 auto;
+  background: none;
+  border: 2px solid var(--color-header-text);
+  border-radius: 4px;
+  color: var(--color-header-text);
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+}
+
+#hamburger-btn:hover,
+#hamburger-btn:focus-visible {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+#nav-menu {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+#nav-menu.show {
+  display: flex;
+}
+
+#nav-menu li a {
+  display: block;
+  color: var(--color-header-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.65rem 1rem;
+  position: relative;
+}
+
+#nav-menu li a::after {
+  content: "";
+  position: absolute;
+  left: 35%;
+  right: 35%;
+  bottom: 0.35rem;
+  height: 2px;
+  background-color: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+#nav-menu li a:hover,
+#nav-menu li a:focus-visible {
+  color: var(--color-accent);
+}
+
+#nav-menu li a:hover::after,
+#nav-menu li a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* ---------- Main ---------- */
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main > h1 {
+  font-family: var(--font-display);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-header);
+}
+
+.intro {
+  text-align: center;
+  max-width: 40em;
+  margin: 0 auto 2rem;
+}
+
+/* Mobile-first: single column grid */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure {
+  margin: 0;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+figcaption {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--color-header);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  background-color: var(--color-header);
+  color: var(--color-header-text);
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  color: var(--color-accent);
+}

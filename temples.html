@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Temple Album – Darlene Kalu</title>
+    <meta name="description" content="A responsive photo album of temples from around the world, built for WDD 131 – Dynamic Web Fundamentals by Darlene Kalu.">
+    <meta name="author" content="Darlene Kalu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Mobile-first: base styles load first, larger-view styles are layered on for wider screens -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 600px)">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <span id="site-title">Temple Album</span>
+        <nav>
+            <button id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span id="hamburger-icon">&#9776;</span>
+            </button>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Houses of the Lord</h1>
+        <p class="intro">A small collection of temples I hope to visit someday, gathered here as I practice building a responsive photo album.</p>
+
+        <div class="gallery">
+            <figure>
+                <img src="images/aba-nigeria-temple.jpg" alt="The Aba Nigeria Temple with its spire against a cloudy sky" width="480" height="720" loading="lazy">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra-ghana-temple.jpg" alt="The Accra Ghana Temple entrance framed by tall palm trees" width="480" height="640" loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/helena-montana-temple.jpg" alt="The Helena Montana Temple tower lit at dusk" width="480" height="720" loading="lazy">
+                <figcaption>Helena Montana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/indiana-indianapolis-temple.jpg" alt="The Indianapolis Indiana Temple with a fountain in front" width="480" height="320" loading="lazy">
+                <figcaption>Indianapolis Indiana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/aba-nigeria-temple.jpg" alt="The Aba Nigeria Temple with its spire against a cloudy sky" width="480" height="720" loading="lazy">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra-ghana-temple.jpg" alt="The Accra Ghana Temple entrance framed by tall palm trees" width="480" height="640" loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/helena-montana-temple.jpg" alt="The Helena Montana Temple tower lit at dusk" width="480" height="720" loading="lazy">
+                <figcaption>Helena Montana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/indiana-indianapolis-temple.jpg" alt="The Indianapolis Indiana Temple with a fountain in front" width="480" height="320" loading="lazy">
+                <figcaption>Indianapolis Indiana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/aba-nigeria-temple.jpg" alt="The Aba Nigeria Temple with its spire against a cloudy sky" width="480" height="720" loading="lazy">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Darlene Kalu &middot; Abuja, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
