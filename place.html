@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Nigeria Country Page – Darlene Kalu</title>
+    <meta name="description" content="A responsive country profile page for Nigeria, featuring key data and current weather, built for WDD 131 – Dynamic Web Fundamentals by Darlene Kalu.">
+    <meta name="author" content="Darlene Kalu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="place-title">Nigeria</h1>
+    </header>
+
+    <main>
+        <div class="hero-wrap">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/nigeria-hero-large.webp">
+                <source media="(min-width: 600px)" srcset="images/nigeria-hero-medium.webp">
+                <img src="images/nigeria-hero-small.webp" alt="Nigerians waving the green-white-green flag amid the energy of everyday life" width="640" height="800" class="hero-image">
+            </picture>
+
+            <section class="card data-card">
+                <h2>Data</h2>
+                <ul class="info-list">
+                    <li><span class="label">Capital:</span><span class="value">Abuja</span></li>
+                    <li><span class="label">Population:</span><span class="value">223 million</span></li>
+                    <li><span class="label">Region:</span><span class="value">West Africa</span></li>
+                    <li><span class="label">Language:</span><span class="value">English</span></li>
+                    <li><span class="label">Currency:</span><span class="value">Naira (₦)</span></li>
+                    <li><span class="label">Government:</span><span class="value">Federal Republic</span></li>
+                </ul>
+            </section>
+
+            <section class="card weather-card">
+                <h2 class="weather-heading">Weather</h2>
+                <img src="images/weather-icon.svg" alt="Partly cloudy weather icon" class="weather-icon-mobile" width="40" height="40">
+                <ul class="info-list">
+                    <li><span class="label">Temperature:</span><span class="value">31&deg;C</span></li>
+                    <li><span class="label">Wind Speed:</span><span class="value">14 km/h</span></li>
+                    <li><span class="label">Wind Chill:</span><span class="value" id="windchill"></span></li>
+                    <li><span class="label">Conditions:</span><span class="value">Partly Cloudy</span></li>
+                </ul>
+            </section>
+        </div>
+
+        <p class="about">
+            Nigeria is the largest economy and one of the most populous countries in Africa, renowned for its rich
+            cultural diversity and vibrant heritage. Home to over 250 ethnic groups and hundreds of languages,
+            Nigeria offers a unique blend of traditions, innovation, and natural beauty, from bustling cities and
+            thriving business hubs to scenic landscapes and historic landmarks. The country's resilient people,
+            growing technology sector, dynamic creative industries, and abundant opportunities continue to
+            position Nigeria as a leading force for economic growth and development across the African continent.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Darlene Kalu &middot; Abuja, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

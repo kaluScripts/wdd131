@@ -1,0 +1,185 @@
+/* ============================
+   WDD 131 – place.css
+   Nigeria Country Page
+   Darlene Kalu
+   ============================ */
+
+:root {
+  --color-green: #008751;
+  --color-green-dark: #00623c;
+  --color-white: #FFFFFF;
+  --color-bg: #F5F6F3;
+  --color-text: #222222;
+  --color-card-bg: rgba(255, 255, 255, 0.96);
+  --color-card-border: #DADDD8;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background-color: var(--color-green);
+  padding: 1.25rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#place-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: var(--color-white);
+  background-color: var(--color-green-dark);
+  border: 2px solid var(--color-white);
+  border-radius: 6px;
+  padding: 0.5rem 1.75rem;
+  text-align: center;
+}
+
+/* ---------- Hero + Cards (mobile-first: stacked) ---------- */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0 2rem;
+}
+
+.hero-wrap {
+  position: relative;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 1rem 0;
+}
+
+.card h2 {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-green-dark);
+  border-bottom: 2px solid var(--color-green);
+  padding-bottom: 0.4rem;
+}
+
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed var(--color-card-border);
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.value {
+  color: var(--color-text);
+}
+
+.weather-icon-mobile {
+  display: block;
+  margin: 0.25rem auto 0.75rem;
+}
+
+/* Emoticon pseudo-element, shown only in the large view */
+.weather-heading::after {
+  content: "";
+}
+
+.about {
+  max-width: 65ch;
+  margin: 2rem auto 0;
+  padding: 0 1.25rem;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  background-color: var(--color-green-dark);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+/* ============================
+   Large view
+   ============================ */
+
+@media screen and (min-width: 700px) {
+
+  #place-title {
+    font-size: 2.4rem;
+  }
+
+  .card {
+    position: absolute;
+    max-width: 300px;
+    margin: 0;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  }
+
+  .data-card {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .weather-card {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  .weather-heading::after {
+    content: "⛅";
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .about {
+    padding: 0 2rem;
+  }
+}
