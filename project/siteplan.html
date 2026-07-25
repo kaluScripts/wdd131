@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan | Roban Stores, Awka</title>
+  <meta name="description" content="Website planning document for the Roban Stores, Awka project: site name, purpose, scenarios, colour schema, typography, and wireframes.">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+
+  <header class="plan-header">
+    <img src="images/roban-stores-awka-logo.jpg" alt="Roban Stores, Awka logo">
+    <div>
+      <h1>Website Site Plan</h1>
+      <p>WDD 131 Dynamic Web Fundamentals Project: Roban Stores, Awka</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="site-name">
+      <h2><span class="tag-number">01</span> Site Name</h2>
+      <div class="brand-block">
+        <img src="images/roban-stores-awka-logo.jpg" alt="Roban Stores logo">
+        <div>
+          <h3>Roban Stores, Awka</h3>
+          <p>This name represents a store that provides a variety of products to our customers at fair prices in Awka, Anambra State. It is the store's real, recognizable name, so using it directly keeps the site trustworthy and easy to find for local shoppers who already know the brand.</p>
+          <span class="domain-note">Optional domain: robanstoresawka.com</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="site-purpose">
+      <h2><span class="tag-number">02</span> Site Purpose</h2>
+      <p>The site provides a catalogue of available products and the exact price to purchase each product from us. It exists so that customers can check what is in stock and what it costs before making the trip to the store, saving time and avoiding wasted visits.</p>
+      <ul>
+        <li>Present an up-to-date catalogue of products sold in-store, organized by category.</li>
+        <li>Display clear, current pricing for each product so customers can plan a purchase confidently.</li>
+        <li>Give customers an easy way to contact the store with delivery requests or feedback.</li>
+      </ul>
+    </section>
+
+    <section id="scenarios">
+      <h2><span class="tag-number">03</span> Scenarios</h2>
+      <p class="muted">Questions a typical visitor might ask when arriving at the site:</p>
+      <ul class="scenario-list">
+        <li>What are the available products in the store right now?</li>
+        <li>What is the exact price of an item today?</li>
+        <li>Do I get home delivery services, and how do I request one?</li>
+        <li>How do I reach the store directly if I have a question about an order?</li>
+      </ul>
+    </section>
+
+    <section id="colour-schema">
+      <h2><span class="tag-number">04</span> Colour Schema</h2>
+      <p>The palette is pulled straight from the Roban Stores mark itself, a confident red and near-black on a warm, paper-like background, with a market gold added as a pricing and hover accent, since price visibility is the whole reason this site exists.</p>
+      <div class="swatch-grid">
+        <div class="swatch">
+          <div class="swatch-colour red"></div>
+          <div class="swatch-info">
+            <strong>Roban Red &mdash; #C41E2A</strong>
+            <span>Headings, navigation bar, buttons, links, active states</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-colour ink"></div>
+          <div class="swatch-info">
+            <strong>Charcoal Ink &mdash; #211C1A</strong>
+            <span>Body text, footer background, header background</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-colour cream"></div>
+          <div class="swatch-info">
+            <strong>Paper Cream &mdash; #FBF7F2</strong>
+            <span>Page background, card backgrounds sit slightly lighter</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-colour gold"></div>
+          <div class="swatch-info">
+            <strong>Market Gold &mdash; #E8A73E</strong>
+            <span>Price tags, hover states, small accents and labels</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="swatch-colour slate"></div>
+          <div class="swatch-info">
+            <strong>Slate &mdash; #6B6560</strong>
+            <span>Secondary and muted text, captions, hairline notes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="typography">
+      <h2><span class="tag-number">05</span> Typography</h2>
+      <p>Three fonts, each doing one job: a bold display face for headings and navigation, a clean workhorse for paragraphs, and a slab-serif reserved for prices and short tag-style labels.</p>
+
+      <div class="type-sample">
+        <span class="label">Headings &amp; Navigation</span>
+        <p class="heading-demo">Fresh Prices, No Surprises</p>
+        <p class="muted">Poppins, 600&ndash;700 weight &mdash; used for the site name, page headings, and nav links.</p>
+      </div>
+
+      <div class="type-sample">
+        <span class="label">Body Text</span>
+        <p class="body-demo">Roban Stores brings everyday groceries, household goods, and fresh produce to Awka at prices you can check before you leave home.</p>
+        <p class="muted">Karla, 400&ndash;500 weight &mdash; used for paragraphs, descriptions, and form labels.</p>
+      </div>
+
+      <div class="type-sample">
+        <span class="label">Prices &amp; Tags</span>
+        <p class="tag-demo">&#8358;1,250 / bag</p>
+        <p class="muted">Roboto Slab, 500&ndash;700 weight &mdash; used for product prices, badges, and short callouts.</p>
+      </div>
+    </section>
+
+    <section id="wireframes">
+      <h2><span class="tag-number">06</span> Wireframes</h2>
+      <p>Rough layout sketches for the home page. Both share the same order &mdash; navigation, full-width hero, featured products, short value strip, footer &mdash; but the product grid collapses from three columns to one as the viewport narrows.</p>
+      <div class="wireframe-grid">
+        <div class="wireframe-card">
+          <h3>Mobile</h3>
+          <img src="images/wireframe-mobile.svg" alt="Mobile wireframe of the Roban Stores home page: stacked nav, hero, single-column product cards, value strip, and footer">
+        </div>
+        <div class="wireframe-card">
+          <h3>Desktop</h3>
+          <img src="images/wireframe-desktop.svg" alt="Desktop wireframe of the Roban Stores home page: horizontal nav, full-width hero, three-column product grid, value strip, and footer">
+        </div>
+      </div>
+    </section>
+
+    <section id="testing">
+      <h2><span class="tag-number">07</span> Testing</h2>
+      <p>Before submission, this document will be self-checked with the standard tools used throughout the course:</p>
+      <div class="note-box">
+        <ul>
+          <li><a href="https://validator.w3.org/nu/" target="_blank" rel="noopener">W3C Nu HTML Checker</a> &mdash; markup validity, no errors</li>
+          <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">W3C CSS Validator</a> &mdash; stylesheet validity, no errors</li>
+          <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener">WAVE</a> &mdash; accessibility and colour contrast</li>
+          <li>Chrome DevTools <strong>Lighthouse</strong> &mdash; best practices, SEO, and performance</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Roban Stores, Awka &mdash; Website Site Plan, WDD 131
+  </footer>
+
+</body>
+</html>
