@@ -1,0 +1,266 @@
+/* ============================
+   WDD 131 – form.css
+   Product Review Form
+   Darlene Kalu
+   ============================ */
+
+:root {
+  --color-header: #1B2A4A;
+  --color-header-text: #FAF9F6;
+  --color-accent: #C9A227;
+  --color-bg: #FAF9F6;
+  --color-card-bg: #FFFFFF;
+  --color-card-border: #DCD6C9;
+  --color-text: #2B2B2B;
+  --color-required: #B3261E;
+  --color-optional: #6B7280;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+/* Visually hidden but still readable by screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background-color: var(--color-header);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+#site-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--color-header-text);
+}
+
+/* ---------- Main / Form container ---------- */
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+form {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label,
+legend {
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.required-flag {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--color-required);
+}
+
+.optional-flag {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-optional);
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  font: inherit;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 6px;
+  padding: 0.65rem 0.75rem;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+/* ---------- Star rating ---------- */
+
+.rating-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.rating-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.rating-option .stars {
+  font-size: 1.3rem;
+  color: #8A6D17;
+  letter-spacing: 0.1rem;
+}
+
+.rating-option input[type="radio"] {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--color-header);
+}
+
+/* ---------- Checkboxes ---------- */
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkbox-option input[type="checkbox"] {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--color-header);
+}
+
+/* ---------- Submit button ---------- */
+
+input[type="submit"] {
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-header-text);
+  background-color: var(--color-header);
+  border: none;
+  border-radius: 6px;
+  padding: 0.85rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus-visible {
+  background-color: #24365e;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  background-color: var(--color-header);
+  color: var(--color-header-text);
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+/* ---------- Confirmation page (review.html) ---------- */
+
+.confirmation-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: 8px;
+  padding: 2rem 1.75rem;
+  text-align: center;
+}
+
+.confirmation-card h1 {
+  font-family: var(--font-display);
+  color: var(--color-header);
+  margin-top: 0;
+}
+
+.confirmation-card .review-count {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.confirmation-card a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--color-header);
+  font-weight: 600;
+}
+
+/* ---------- Responsive ---------- */
+
+@media screen and (min-width: 600px) {
+  form {
+    padding: 2.5rem;
+  }
+
+  #site-title {
+    font-size: 2.4rem;
+  }
+}
