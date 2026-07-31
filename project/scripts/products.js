@@ -56,7 +56,7 @@ const products = [
     category: 'Produce',
     price: 2000,
     unit: 'per bunch',
-    description: 'Golden ripe plantain, ready for frying or boiling the same day.',
+    description: 'Ripe plantain, ready for frying or boiling the same day.',
     image: 'images/category-produce.webp',
   },
   {

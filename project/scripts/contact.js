@@ -5,10 +5,10 @@
    ========================================================================== */
 
 const subjectResponses = {
-  'General Inquiry': "We'll get back to you within one business day.",
+  'General Inquiry': "We will get back to you within one business day.",
   'Delivery Request': "Our delivery team will confirm availability for your area within 24 hours.",
-  'Product Availability': "We'll check current stock and reply with what's available.",
-  'Feedback': "Thank you for helping us improve — a team member will follow up shortly.",
+  'Product Availability': "We will check current stock and reply with what's available.",
+  'Feedback': "Thank you for helping us improve, a team member will follow up shortly.",
 };
 
 const formFieldIds = ['fullName', 'email', 'subject', 'message'];
@@ -72,7 +72,7 @@ function validateMessage() {
   const value = field.value.trim();
 
   if (value.length < 10) {
-    return 'Please enter at least 10 characters so we understand your message.';
+    return 'Please enter at least 15 characters so we understand your message.';
   }
 
   return '';

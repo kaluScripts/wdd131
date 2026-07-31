@@ -76,7 +76,7 @@ function trackVisit() {
   }
 
   if (record.count === 1) {
-    badge.textContent = 'Welcome to Roban Stores, Awka — glad you found us!';
+    badge.textContent = 'Welcome to Roban Stores, Awka. Glad you found us!';
   } else if (record.count < 5) {
     badge.textContent = `Welcome back! This is visit number ${record.count}.`;
   } else {

@@ -56,7 +56,7 @@ a {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
 }
@@ -530,7 +530,7 @@ section {
 
 .filter-btn[aria-pressed="true"] {
   background-color: #c41e2a;
-  border-color: #c41e2a;
+  border-color: #a5171f;
   color: #ffffff;
 }
 
