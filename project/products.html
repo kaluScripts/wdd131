@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Catalogue | Roban Stores, Awka</title>
+  <meta name="description" content="Browse the full Roban Stores product catalogue: bakery, fresh produce, household essentials, and pantry provisions with clear, current pricing. Search or filter by category.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Karla:wght@400;500;700&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/roban-stores-awka-logo.webp" alt="Roban Stores logo" class="brand-logo" width="44" height="32">
+        <span class="brand-name">Roban Stores</span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="sr-only">Open menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="visit-bar">
+    <p id="visitBadge">Welcome to Roban Stores, Awka!</p>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-banner">
+      <h1>Product Catalogue</h1>
+      <p>Everything on our shelves, with clear pricing so you know exactly what to expect before you shop.</p>
+    </section>
+
+    <section class="wrap">
+
+      <noscript>
+        <p class="section-lead">This catalogue is built with JavaScript. Please enable JavaScript in your browser to search, filter, and view Roban Stores products, or call us at +234 803 555 0142 for current pricing.</p>
+      </noscript>
+
+      <div class="controls-bar">
+        <div class="search-field">
+          <label for="productSearch">Search products</label>
+          <input type="search" id="productSearch" name="productSearch" placeholder="e.g. bread, rice, tomatoes">
+        </div>
+        <div>
+          <p class="filter-group-label">Filter by category</p>
+          <div class="filter-group" id="filterGroup" role="group" aria-label="Filter products by category"></div>
+        </div>
+      </div>
+
+      <div class="results-bar">
+        <p id="resultsCount" role="status">Showing all products</p>
+        <button type="button" class="favorites-toggle" id="favoritesToggle" aria-pressed="false">&#9825; Show favorites only</button>
+      </div>
+
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+
+      <div class="empty-state hidden" id="emptyState">
+        <p>No products match your search just yet. Try a different term or clear the category filter.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Roban Stores, Awka</p>
+        <p>Fresh prices, no surprises.</p>
+      </div>
+      <div>
+        <h2>Visit Us</h2>
+        <address>
+          <p>Enugu-Onitsha Expressway,<br>Awka, Anambra State, Nigeria</p>
+          <p>Open Monday &ndash; Saturday, 8:00 AM &ndash; 8:00 PM</p>
+        </address>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="siteplan.html">Site Plan</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> Roban Stores, Awka. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/products.js"></script>
+</body>
+</html>

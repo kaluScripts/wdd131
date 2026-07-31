@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Roban Stores, Awka</title>
+  <meta name="description" content="Get directions to Roban Stores in Awka, Anambra State, see our opening hours, and send us a message about products, delivery, or feedback.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Karla:wght@400;500;700&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/roban-stores-awka-logo.webp" alt="Roban Stores logo" class="brand-logo" width="44" height="32">
+        <span class="brand-name">Roban Stores</span>
+      </a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="sr-only">Open menu</span>
+        <span class="hamburger"></span>
+      </button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="visit-bar">
+    <p id="visitBadge">Welcome to Roban Stores, Awka!</p>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-banner">
+      <h1>Contact Us</h1>
+      <p>Questions about a product, delivery, or opening hours? Reach out below or stop by the store.</p>
+    </section>
+
+    <section class="wrap">
+      <div class="contact-grid">
+
+        <div class="store-info">
+          <h2>Find Us</h2>
+          <address>
+            <p>Roban Stores<br>
+              Enugu-Onitsha Expressway,<br>
+              Awka, Anambra State, Nigeria</p>
+          </address>
+
+          <table class="hours-table">
+            <caption class="sr-only">Roban Stores opening hours</caption>
+            <thead>
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Monday &ndash; Saturday</th>
+                <td>8:00 AM &ndash; 8:00 PM</td>
+              </tr>
+              <tr>
+                <th scope="row">Sunday</th>
+                <td>10:00 AM &ndash; 6:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="info-links">
+            <a href="tel:+2348035550142">&#9742;&nbsp;+234&nbsp;803&nbsp;555&nbsp;0142</a>
+            <a href="mailto:hello@robanstoresawka.com">&#9993; hello@robanstoresawka.com</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+
+          <div class="confirmation-panel hidden" id="confirmationPanel" role="status" aria-live="polite">
+            <h2>Message Received</h2>
+            <p id="confirmationText"></p>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <p class="form-note" id="draftNote"></p>
+
+            <fieldset>
+              <legend>Your Details</legend>
+
+              <div class="form-row" id="nameRow">
+                <label for="fullName">Full name <span class="required-mark">*</span></label>
+                <input type="text" id="fullName" name="fullName" autocomplete="name" required minlength="2">
+                <p class="field-error" id="nameError"></p>
+              </div>
+
+              <div class="form-row" id="emailRow">
+                <label for="email">Email address <span class="required-mark">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <p class="field-error" id="emailError"></p>
+              </div>
+
+              <div class="form-row" id="phoneRow">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="^[0-9+\s-]{7,15}$" placeholder="e.g. 0803 555 0142">
+                <p class="field-error" id="phoneError"></p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Your Message</legend>
+
+              <div class="form-row" id="subjectRow">
+                <label for="subject">Subject <span class="required-mark">*</span></label>
+                <select id="subject" name="subject" required>
+                  <option value="">Choose a subject&hellip;</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Delivery Request">Delivery Request</option>
+                  <option value="Product Availability">Product Availability</option>
+                  <option value="Feedback">Feedback</option>
+                </select>
+                <p class="field-error" id="subjectError"></p>
+              </div>
+
+              <div class="form-row" id="messageRow">
+                <label for="message">Message <span class="required-mark">*</span></label>
+                <textarea id="message" name="message" required minlength="10" maxlength="300"></textarea>
+                <span class="char-count" id="charCount">0 / 300</span>
+                <p class="field-error" id="messageError"></p>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Roban Stores, Awka</p>
+        <p>Fresh prices, no surprises.</p>
+      </div>
+      <div>
+        <h2>Visit Us</h2>
+        <address>
+          <p>Enugu-Onitsha Expressway,<br>Awka, Anambra State, Nigeria</p>
+          <p>Open Monday &ndash; Saturday, 8:00 AM &ndash; 8:00 PM</p>
+        </address>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="siteplan.html">Site Plan</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> Roban Stores, Awka. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/contact.js"></script>
+</body>
+</html>
